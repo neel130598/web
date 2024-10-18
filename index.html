@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Form</title>
+<link rel="stylesheet" href="styles.css">
+<!-- Link to external CSS file -->
+<style>
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 20px;
+	background-color: #778899;
+}
+
+.container {
+	max-width: 400px;
+	margin: auto;
+	padding: 20px;
+	background: white;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+	text-align: center;
+	color: #008000;
+}
+
+label {
+	display: block;
+	margin-bottom: 5px;
+	color: #333;
+}
+
+input[type="text"], input[type="text"], input[type="date"], input[type="text"],
+	input[type="text"], input[type="date"] {
+	width: 97%;
+	padding: 10px;
+	margin-bottom: 15px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+input[type="submit"] {
+	background: #0000FF;
+	color: white;
+	border: none;
+	padding: 10px;
+	cursor: pointer;
+	border-radius: 5px;
+	width: 100%;
+}
+
+input[type="submit"]:hover {
+	background: #4a4e54;
+}
+
+.footer {
+	text-align: center;
+	margin-top: 20px;
+	color: #666;
+}
+</style>
+</head>
+<body>
+
+
+
+
+	<div class="container">
+		<!-- Full-width images with number and caption text -->
+		<div class="mySlides fade">
+			<img src="image/merclogo.jpg" style="width: 100%">
+		</div>
+		<!-- The dots/circles -->
+		<div style="text-align: center">
+			<span class="dot" onclick="currentSlide(1)"></span>
+		</div>
+		
+		<form action="merc" method="POST">
+		
+		<h1>
+			<b>IT Purchase</b>
+		</h1>
+		
+		
+			<!-- Change the action as needed -->
+			<label for="vender"><b>Vendor Name:</b></label> 
+			<input type="text" name="vname" required> 
+			
+			<label for="invnumber"><b>InvoiceNumber:</b>
+			</label> <input type="text" name="inumber" required> 
+			
+			<label for="indate"><b>Invoice Date:</b>
+			</label> <input type="date" name="idate" required><br><br> 
+			
+			<label for="pitem"><b>Perchase Items:</b></label> 
+			<input type="text" name="pitem" required> 
+			
+			<label for="tamount"><b>Total Amount:</b></label> 
+			<input type="text" name="tamount" required> 
+			
+			<label for="cdate"><b>Certification Date:</b></label> 
+			<input type="date" name="cdate" required><br><br>
+			
+			<br> <input type="submit" value="Save">
+		</form>
+
+
+	</div>
+
+</body>
+</html>
